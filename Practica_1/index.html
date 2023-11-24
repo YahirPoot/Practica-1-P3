@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practica 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="conatiner-details">
+            <label for="ISBN">ISBN: </label>
+            <input type="text" id="ISBN" required placeholder="ISBN">
+    
+            <label for="titulo">Titulo: </label>
+            <input type="text" id="titulo" required placeholder="Titulo">
+    
+            <button onclick="agregarBtn()">Agregar Libro</button><br>
+            <button onclick="buscarBtn()">Buscar Libro</button><br>
+            <button onclick="eliminarBtn()">Eliminar Libro</button>
+        </div>
+
+        <div class="catalogo">
+            <h2>Catalogo</h2>
+            <div id="catalogoLibros"></div>
+        </div>
+        
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
